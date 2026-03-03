@@ -1,0 +1,13 @@
+<template>
+    <lightning-file-upload
+        label="Upload File(s)"
+        name="fileUploader"
+        accept={acceptedFormats} 
+        
+        file-field-name="Guest_Record_fileupload__c"
+        file-field-value={encryptedToken}
+        onuploadfinished={handleUploadFinished}
+        multiple
+    >
+    </lightning-file-upload>
+</template>
