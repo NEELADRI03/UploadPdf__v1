@@ -1,13 +1,18 @@
 <template>
     <lightning-file-upload
         label="Upload File(s)"
-        name="fileUploader"
-        accept={acceptedFormats} 
-        
+        name="fileUploader" 
         file-field-name="Guest_Record_fileupload__c"
         file-field-value={encryptedToken}
         onuploadfinished={handleUploadFinished}
         multiple
     >
     </lightning-file-upload>
+
+    <!-- <lightning-button
+            label="Merge Files"
+            onclick={mergeFiles}
+            class="slds-m-top_medium">
+        </lightning-button> -->
+
 </template>
